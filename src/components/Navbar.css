@@ -16,18 +16,19 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    height: auto;
 }
 
 .container_nav_item ul {
     display: flex;
     list-style-type: none;
+    
 
 }
 
 .container_nav_item ul li {
     text-decoration: none;
     color: #1c1c1c;
+    
 }
 
 
@@ -40,7 +41,6 @@
     #abrir {
         display: block;
         border: none;
-
     }
 
 
@@ -73,6 +73,7 @@
         align-items: start;
         gap: 1rem;
         margin-top: 5rem;
+        z-index: 1;
 
     }
 
@@ -91,6 +92,7 @@
     .container_nav_item ul {
         display: flex;
         flex-direction: column;
+
 
 
     }
@@ -135,10 +137,11 @@
         align-items: center;
         /* centra vertical */
         background-color: #eaf2f0;
-        padding: 30px 20px;
+        
     }
 
     .nav_visible {
+        margin-right: 30%;
         display: flex;
         justify-content: center;
         /* centra horizontal */
@@ -163,6 +166,7 @@
     }
 
     form input{
+        
         font-size: 1.5rem;
         border-radius: 5px;
         margin-right: 10px;
@@ -194,7 +198,7 @@
 
     /* Estilos para la lista ul destokp */
     .nav {
-        padding-right: 20%;
+        
         list-style: none;
         margin: 0;
         display: flex;
@@ -203,11 +207,10 @@
 
     .nav li {
         cursor: pointer;
-        font-weight: 600;
-        font-size: 1.6rem;
+        font-weight: 640;
+        font-size: 1.4rem;
         text-align: center;
         color: #fff;
-        transition: 0.2s;
     }
 
 }
