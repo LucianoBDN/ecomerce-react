@@ -16,6 +16,12 @@ function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const [mostrarCampo, setMostrarCampo] = useState(false);
+
+    const toggleCampoBusqueda = () => {
+        setMostrarCampo(!mostrarCampo);
+    }
+    
 
 
     return (
@@ -35,12 +41,15 @@ function Navbar() {
             <div className="logo">
                 <img className="sportstrade" src={sportStrade} alt="..." />
             </div>
-            <div className="form">
-                <form>
-                    <input type="search" placeholder="Buscar" aria-label="Search" />
-                    <button className="btn-buscar" type="submit"><img className="buscar" src={buscar} alt="..." /></button>
-                </form>
-            </div>
+            
+                <div className="boton-busqueda">
+                    <button onClick={toggleCampoBusqueda} className="btn-buscar"><img className="buscar" src={buscar} alt="..." /></button>{mostrarCampo && (
+                        <div>
+                        <input type="text" placeholder="Buscar" aria-label="Search" />
+                        </div>
+                    )}
+                </div>
+            
             <div className="carrito">
                 <img className="carrito" src={carrito} alt="" />
             </div>

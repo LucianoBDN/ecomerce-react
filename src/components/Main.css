@@ -26,6 +26,7 @@ main {
     animation: cambio 9s infinite alternate linear;
     width: 400%;
     padding-left: 0;
+    align-items: stretch;
 }
 
 .slider li {
@@ -34,7 +35,6 @@ main {
 }
 
 .slider img {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -52,7 +52,7 @@ main {
 }
 
 .logo_banner img {
-    width: 20%;
+    width: 30%;
 }
 
 @keyframes cambio {
@@ -191,7 +191,12 @@ main {
 
 }
 
-@media (min-width: 850px) {
+@media (max-width: 850px) {
+
+    .logo_banner img{
+        width: 50%;
+    }
+
     .cards-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -202,6 +207,7 @@ main {
 
 
 @media (min-width: 851px) {
+    
     .cards-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
